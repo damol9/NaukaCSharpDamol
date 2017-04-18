@@ -1,0 +1,13 @@
+﻿<Window x:Class="NaukaCSharpDamol.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NaukaCSharpDamol"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="242.818" Width="311.585">
+    <Grid Margin="0,0,2,1">
+        <Button Content="TEST" HorizontalAlignment="Left" Margin="83,67,0,0" VerticalAlignment="Top" Width="138" Height="62"/>
+
+    </Grid>
+</Window>
