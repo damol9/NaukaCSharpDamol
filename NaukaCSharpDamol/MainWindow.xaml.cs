@@ -120,6 +120,7 @@ namespace NaukaCSharpDamol
                 }
                 else
                 {
+                    password = Encryption.EncryptSHA512Managed(password);
                     DBResult_password = MySQL_Query("SELECT konta.password FROM konta WHERE konta.login = \"" + login + "\";");
                     rdr.Close();
                     if (DBResult_password == password && DBResult_login == login)
