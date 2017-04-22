@@ -5,18 +5,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:NaukaCSharpDamol"
         mc:Ignorable="d"
-        Title="Testowy system logowania" Height="216.26" Width="311.585" ResizeMode="NoResize">
+        Title="Testowy system logowania" Height="232.927" Width="311.585" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
     <Grid Margin="0,0,0,1" HorizontalAlignment="Left" Width="302">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="95*"/>
-            <ColumnDefinition Width="207*"/>
-        </Grid.ColumnDefinitions>
-        <Button x:Name="Button1" Content="Zaloguj" Margin="82,106,82,11" Width="138" Height="67" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center" Click="Button_Click" Grid.ColumnSpan="2"/>
         <TextBox x:Name="TextBoxA" HorizontalAlignment="Left" Height="23" Margin="82,29,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="138" Grid.ColumnSpan="2"/>
         <Label x:Name="Licznik" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="38.376,80,0,0" Grid.Column="1"/>
         <Label Content="Login:" HorizontalAlignment="Left" Margin="34,25,0,0" VerticalAlignment="Top"/>
         <Label Content="Hasło:" HorizontalAlignment="Left" Margin="34,53,0,0" VerticalAlignment="Top"/>
         <PasswordBox x:Name="PasswordBox1" HorizontalAlignment="Left" Margin="82,57,0,0" VerticalAlignment="Top" Width="138" Height="23" Grid.ColumnSpan="2"/>
+        <Label Content="Rejestracja (Kliknij)" HorizontalAlignment="Right" Margin="0,80,95,0" VerticalAlignment="Top" Height="27" MouseLeftButtonUp="Label_MouseLeftButtonUp" Width="112" HorizontalContentAlignment="Center">
+            <Label.Foreground>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.HotTrackColorKey}}"/>
+            </Label.Foreground>
+        </Label>
+        <Button x:Name="Button1" Content="Zaloguj" HorizontalAlignment="Left" Margin="82,107,0,0" VerticalAlignment="Top" Width="138" RenderTransformOrigin="-0.138,-0.5" Height="67" Click="Button_Click"/>
+        <Button x:Name="LogoutButton" Content="Wyloguj" HorizontalAlignment="Left" Margin="227,131,0,0" VerticalAlignment="Top" Width="65" IsEnabled="False" Click="LogoutButton_Click"/>
+        <Label Content="Zalogowano&#xD;&#xA;jako:" HorizontalAlignment="Left" Margin="0,106,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.018,-0.231" Width="77" Height="45"/>
+        <Label x:Name="LoggedAs" Content="---" HorizontalAlignment="Left" Margin="0,141,0,0" VerticalAlignment="Top" Height="23" Width="76"/>
+        <Label Content="Logowanie" HorizontalAlignment="Left" Margin="82,0,0,0" VerticalAlignment="Top" Width="138" HorizontalContentAlignment="Center"/>
 
     </Grid>
 </Window>
